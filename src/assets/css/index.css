@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.container{
+  @apply mx-auto px-4 md:px-16 lg:px-32
+}
+
+.title{
+  @apply my-4
+}
+.title h1{
+  @apply capitalize text-3xl 
+}
+
+header{ 
+  @apply h-12 w-full fixed bg-white shadow-lg flex z-20
+}
+main{
+  @apply pt-0
+}
+a{
+  @apply mx-2 flex items-center justify-center h-full
+}
+
+.home .hero{
+  @apply h-[calc(100vh-1rem)] bg-hero-image bg-cover bg-no-repeat text-white flex items-center
+}
+.home .hero .typography{
+  @apply capitalize
+}
+.home .hero .typography button{
+  @apply uppercase px-3 py-2 rounded-md mt-6 bg-[#d70469] font-semibold
+}
+.searchexers .search{
+  @apply my-10 w-full flex justify-center
+}
+.searchexers .search input{
+  @apply p-3 border-[#d70469] rounded-md border-2 outline-none w-full md:w-[40%] 
+}
+.searchexers button.part{
+  @apply  mx-2 px-3 py-2 bg-red-100 w-96 capitalize rounded-md whitespace-nowrap
+}
+.exers .exersshow{
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4
+}
+
+.exers .exersshow .exer{
+  @apply p-5 rounded-lg hover:scale-105 capitalize transition-all hover:border-b-4 border-b-amber-700
+}
+
+.exers .exersshow .exer h3{
+  @apply font-semibold 
+}
+
+.exers .exersshow .exer span{
+  @apply text-sm
+}
+
+.pagination {
+  @apply flex capitalize justify-center items-center w-full bg-red-50
+}
+.pagination button{
+  @apply px-3 py-2
+}
