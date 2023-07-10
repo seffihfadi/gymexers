@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return ( 
-    <header>
-      <Link to='/'>LOGO</Link>
-      <a href="#exercises">exercises</a>
+    <header className='flex justify-around items-center '>
+      <Link to='/' className='text-[32px] bold text-[#d70469]'>Gym</Link>
+      <a href="#exercises" className='text-[24px]'>exercises</a>
     </header> 
   );
 }

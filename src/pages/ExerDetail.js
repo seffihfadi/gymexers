@@ -34,8 +34,6 @@ const ExerDetail = () => {
     setCurrId(nextId.toString());
   };
 
-  console.log(exerData);
-
   return (
     <div className="exerdetail">
       <h1 className="text-center">Exercise Details</h1>
@@ -45,7 +43,7 @@ const ExerDetail = () => {
           <div className="flex gap-10 items-center justify-center mt-8">
             <button
               onClick={handlePrevious}
-              className="border-2 border-solid rounded-md border-[#d70469] p-2"
+              className="border-2 border-solid rounded-md border-[#d70469] p-2 hidden md:block"
             >
               Previous
             </button>
@@ -57,7 +55,7 @@ const ExerDetail = () => {
             </div>
             <button
               onClick={handleNext}
-              className="border-2 border-solid border-[#d70469] rounded-md p-2"
+              className="border-2 border-solid border-[#d70469] rounded-md p-2 hidden md:block"
             >
               Next
             </button>
