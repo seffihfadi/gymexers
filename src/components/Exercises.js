@@ -50,12 +50,12 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
           {currentExers.length > 0 
             ? currentExers.map((exercise) => 
               <Link to={`/exercises/${exercise.id}`}>
-              <div key={exercise.id} className='exer'>
-                <img src={exercise.gifUrl} alt={exercise.target} load='lazy' />
-                <h3>{exercise.name}</h3>
-                <span>{exercise.target} - </span> 
-                <span>{exercise.bodyPart} </span>
-              </div>
+                <div key={exercise.id} className='exer'>
+                  <img src={exercise.gifUrl} alt={exercise.target} load='lazy' />
+                  <h3>{exercise.name}</h3>
+                  <span>{exercise.target} - </span> 
+                  <span>{exercise.bodyPart} </span>
+                </div>
               </Link>
               )
             : <div>No Data Found</div> 

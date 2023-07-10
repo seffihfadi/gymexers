@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes} from 'react-router-dom';
 import Home from './pages/Home';
 import ExerDetail from './pages/ExerDetail';
 import Header from './components/Header';
@@ -12,7 +12,7 @@ function App() {
       <main>
         <Routes>
           <Route path='/' element={ <Home /> } />
-          <Route path='/exercise/:id' element={ <ExerDetail /> } />
+          <Route path='/exercises/:id' element={ <ExerDetail /> } />
         </Routes>
       </main>
       <Footer />
