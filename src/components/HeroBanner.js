@@ -9,9 +9,9 @@ const HeroBanner = () => {
   return ( 
     <div className="hero">
       <div className="container">
-        <div className="typography">
+        <div className="typography text-center md:text-left">
           <h3 className="text-[#d70469] text-3xl font-bold">fitness club</h3>
-          <h1 className="text-5xl">smile, sweet and repeat</h1>
+          <h1 className="text-4xl md:text-5xl">smile, sweet and repeat</h1>
           <button onClick={handleScroll}>explore exercises</button>
         </div>
       </div>

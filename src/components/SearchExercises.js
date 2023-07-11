@@ -47,7 +47,7 @@ const SearchExercises = ({exercises, setExercises, bodyPart, setBodyPart}) => {
   return (
     <div className="searchexers">
       <div className="container">
-        <div className="title"><h1>awesome exercices you should know</h1></div>
+        <div className="title text-center"><h1>awesome exercices you should know</h1></div>
         <div className="search">
           <input value={search} type="text" onChange={handleSearch} placeholder='Search' />
           

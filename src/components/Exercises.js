@@ -38,7 +38,7 @@ const Exercises = ({exercises, setExercises, bodyPart}) => {
   return ( 
     <div className="exers">
       <div className="container">
-      <div className="title"><h1>all resaults</h1></div>
+      <div className="title text-center"><h1>all resaults</h1></div>
       {exercises.length > 9 && (
         <div className='pagination'>
           {existPrev && <button onClick={() => {setCurrentPage(currentPage - 1)}}>Prev</button>}
